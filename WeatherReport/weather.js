@@ -1,4 +1,5 @@
 
+
 //const srchbtn = document.getElementById("search-btn");
 //srchbtn.addEventListener('click', showReport);
 
@@ -11,7 +12,7 @@ function showReport() {
     //let country = document.getElementById("search-box-country").value;
 
     let xh = new XMLHttpRequest();
-    let url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=24060611d6b664b49a70569445952941";
+    let url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=24060611d6b664b49a70569445952941&units=metric";
 
     xh.open("GET", url);
 
@@ -50,7 +51,7 @@ function callingfunc(mj) {
     newELe.children[2].children[0].innerHTML = mj.weather[0].main + " | ";
     newELe.children[2].children[1].innerHTML = '"' + mj.weather[0].description + '"';
 
-    newELe.children[4].children[0].innerHTML = mj.main.temp + "K";
+    newELe.children[4].children[0].innerHTML = mj.main.temp + "&#176C";
 
 
     par.insertBefore(newELe, par.firstChild);
