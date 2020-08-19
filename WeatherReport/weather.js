@@ -1,5 +1,4 @@
 
-
 //const srchbtn = document.getElementById("search-btn");
 //srchbtn.addEventListener('click', showReport);
 
@@ -48,7 +47,7 @@ function callingfunc(mj) {
     newELe.children[0].children[1].innerHTML = mj.coord.lon + "&#176 | ";
     newELe.children[0].children[2].innerHTML = mj.coord.lat + "&#176";
 
-    newELe.children[2].children[0].innerHTML = mj.weather[0].main + " | ";
+    newELe.children[2].children[0].innerHTML = mj.weather[0].main;
     newELe.children[2].children[1].innerHTML = '"' + mj.weather[0].description + '"';
 
     newELe.children[4].children[0].innerHTML = mj.main.temp + "&#176C";
