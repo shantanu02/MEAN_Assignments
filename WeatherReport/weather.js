@@ -42,7 +42,7 @@ function callingfunc(mj) {
     newELe.style.justifyContent = "center";
     newELe.style.alignItems = "center";
     newELe.style.border = "1px solid white";
-    newELe.style.borderRadius = "10%";
+    newELe.style.borderRadius = "25px";
     newELe.children[0].children[0].innerHTML = mj.name + " | ";
     newELe.children[0].children[1].innerHTML = mj.coord.lon + "&#176 | ";
     newELe.children[0].children[2].innerHTML = mj.coord.lat + "&#176";
